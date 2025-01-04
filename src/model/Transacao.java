@@ -29,6 +29,8 @@ public Transacao (String descricao, double valor, LocalDate data, TipoTransacao 
     return data;
    }
 
+   public TipoTransacao getTipo() { return tipo;}
+
    public String toString(){
     return String.format("[%s] %s - R$ %.2f em %s",
             tipo, descricao, valor, data.toString());
